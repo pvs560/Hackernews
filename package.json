@@ -16,7 +16,10 @@
     "react-scripts": "3.4.1",
     "redux": "^4.0.5",
     "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "timeago": "^1.6.7",
+    "timeago-react": "^3.0.0",
+    "timeago.js": "^4.0.2"
   },
   "scripts": {
     "start": "react-scripts start",

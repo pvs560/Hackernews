@@ -42,3 +42,26 @@
   background: url(https://news.ycombinator.com/grayarrow.gif) no-repeat;
   background-position: center;
 }
+
+.text-left {
+  text-align: left;
+}
+
+.width90{
+  width:90%
+}
+.marg-auto {
+  margin: auto;
+}
+.table-striped tbody tr:nth-of-type(odd){
+  background-color: rgba(131,109,89,0.05);
+}
+.header-bgcolor{
+  background-color: rgb(225,101,3);
+}
+.table-bgcolor {
+  background-color: rgb(236,236,229);
+}
+.cursor{
+  cursor: pointer;
+}

@@ -39,7 +39,7 @@ export const setGraphData = (HNewsList)=>{
     {
     label: 'Votes',
     fill: false,
-    lineTension: 0.5,
+    lineTension: 0,
     backgroundColor: 'rgba(75,192,192,1)',
     borderColor: 'rgba(0,0,0,1)',
     borderWidth: 2,
@@ -52,5 +52,21 @@ export const setGraphData = (HNewsList)=>{
       payload:{
         graphDataState
       }
+  }
+}
+
+export const updateVotes =(objectID)=>{
+  return (dispatch,getState) =>{
+       let curState = getState();
+       let hackerNewsObjList = [...curState.hackerNewsData];
+       let hackerNewsObject = hackerNewsObjList.find((data) => data.objectID === objectID);
+       hackerNewsObject.points = hackerNewsObject.points+1;
+       dispatch({
+        type:actionTypes.SET_HACKER_NEWS_DATA,
+        payload:{
+          hackerNewsData:hackerNewsObjList
+      }
+    })
+    dispatch(setGraphData(hackerNewsObjList));
   }
 }

@@ -8,7 +8,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App width90 marg-auto table-bgcolor">
       {/* <header className="App-header">
       </header> */}
        <Provider store={store}>

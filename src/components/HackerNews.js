@@ -13,7 +13,7 @@ export default class HackerNews extends React.Component {
 
      render(){
          return <>
-         <HackerNewsTable hackerNewsData={this.props.hackerNewsData}/>
+         <HackerNewsTable hackerNewsData={this.props.hackerNewsData} updateVotes={this.props.actions.updateVotes}/>
          <HackerNewsGraph graphDataState={this.props.graphDataState}/>
          </>
      }
